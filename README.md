@@ -32,6 +32,8 @@ Following [DA-WSOL][dawsol_url] to prepare the dataset
 
 Following [DA-WSOL][dawsol_url] to train the baseline method (CAM/HAS/CutMix/ADL/DA-WSOL)
 
+Note that ``--post_methods" should be set as ``CAM" for efficiency in the training process.
+
 ### Using Our BagCAMs for Testing
 
 1. Confirming ``$data_root" is set as the folder of datasets that has been arranged as mentioned above.
