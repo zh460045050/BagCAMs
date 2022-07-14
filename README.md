@@ -1,7 +1,7 @@
 # BagCAMs
 
 ## Overview
-Official implementation of the paper ``[Bagging Regional Classification Activation Maps for Weakly Supervised Object Localization][paper_url]" (ECCV'22) 
+Official implementation of the paper ``Bagging Regional Classification Activation Maps for Weakly Supervised Object Localization" (ECCV'22) 
 
 ## Gap between image-level classifier and pixel-level localizer
 
