@@ -105,6 +105,7 @@ This code and our experiments are conducted based on the release code of [gradca
 [EVAL_url]: https://github.com/clovaai/wsolevaluation
 [tl_url]: https://github.com/jindongwang/transferlearning
 [GradCAM_url]: https://github.com/kazuto1011/grad-cam-pytorch
+[dawsol_url]: https://github.com/zh460045050/DA-WSOL_CVPR2022
 
 
 [paper_url]: https://arxiv.org/abs/2203.01714
