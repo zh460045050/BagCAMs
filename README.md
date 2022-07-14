@@ -26,54 +26,7 @@ Our BagCAMs focuses on deriving a set of regional localizers from this well-trai
 
 ### Prepare the dataset
 
-1. Downloading the train/test split and bounding-boxes annotation for CUB-200, OpenImages, ILSVRC dataset from [our google drive][meta_url]. 
-
-2. Dowinloading source images and pixel-level localiztion masks of these three datasets from: 
-     <br/>CUB-200 dataset: [source images][cub_image_url],  [segmentation mask][cub_mask_url]
-     <br/>OpenImages dataset: [source images][open_image_url], [segmentation mask][open_mask_url]
-     <br/>ILSVRC dataset: [source_images][ilsvrc_url]
-
-3. Putting these three dataset into "$dataroot" with following layout:
- 
-     <br/>|--CUB 
-     <br/>|    |--001.Black_footed_Albatross
-     <br/>|    |--002.Laysan_Albatross
-     <br/>|    |--....
-
-     <br/>|--CUBMask
-     <br/>|    |--imgs
-     <br/>|    |  |--001.Black_footed_Albatross
-     <br/>|    |  |--002.Laysan_Albatross
-     <br/>|    |  |--....
-     <br/>|    |
-     <br/>|    |--masks
-     <br/>|    |   |--001.Black_footed_Albatross
-     <br/>|    |   |--002.Laysan_Albatross
-     <br/>|    |   |--....
-
-     <br/>|--OpenImages
-     <br/>|   |--train
-     <br/>|   |   |--01226z
-     <br/>|   |   |--018xm
-     <br/>|   |   |--....
-     <br/>|   |--val
-     <br/>|   |   |--01226z
-     <br/>|   |   |--018xm
-     <br/>|   |   |--....
-     <br/>|   |--test
-     <br/>|   |    |--01226z
-     <br/>|   |    |--018xm
-     <br/>|   |    |--....
-
-     <br/>|--ILSVRC
-     <br/>    |--train
-     <br/>    |   |---n01440764
-     <br/>    |   |---01443537
-     <br/>    |   |---...
-     <br/>    |--val
-     <br/>    |    |--ILSVRC2012_val_00000001.JPEG
-     <br/>    |    |--ILSVRC2012_val_00000002.JPEG
-     <br/>    |    |--....
+Following [DA-WSOL][dawsol_url] to prepare the dataset
 
 ### Training baseline methods
 
@@ -89,11 +42,13 @@ Following [DA-WSOL][dawsol_url] to train the baseline method
 
 4. Confirming ``--architecture" and ``--wsol_method" are consist with the setting for the trained checkpoint.
 
-5. Set ``--post_methods" as BagCAMs (or other methods, e.g., CAM/GradCAM/GradCAM++/PCS
+5. Set ``--post_methods" as BagCAMs (or other methods, e.g., CAM/GradCAM/GradCAM++/PCS)
 
-5. Running ``bash run_test.sh"
+6. Set ``--target_layer" as name of the layer whose outputed feature & gradient are used. (e.g., layer1,2,3,4 for ResNet backbone).
 
-6. Test log files and test scores are save in "--save_dir"
+7. Running ``bash run_test.sh"
+
+8. Test log files and test scores are save in "--save_dir"
 
 ### Performance
 
@@ -137,10 +92,10 @@ Following [DA-WSOL][dawsol_url] to train the baseline method
 @article\{DAWSOL,</br>
   title=\{Weakly Supervised Object Localization as Domain Adaption\},</br>
   author=\{Zhu, Lei and She, Qi and Chen, Qian and You, Yunfei and Wang, Boyu and Lu, Yanye\},</br>
-  journal=\{arXiv preprint arXiv:2203.01714\},</br>
+  booktitle=\{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition\},</br>
+  pages=\{14637--14646\},</br>
   year=\{2022\}</br>
 \}
-
 
 ### Acknowledgement
 This code and our experiments are conducted based on the release code of [gradcam][GradCAM_url] / [wsolevaluation][EVAL_url] / [transferlearning][tl_url]. Here we thank for their remarkable works.
