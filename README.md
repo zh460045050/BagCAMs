@@ -12,13 +12,13 @@ However, the object localizer focuses on discerning the class of all regional po
 To bridge this gap, our work proposes a plug-and-play approach called BagCAMs, which can better project an image-level trained classifier to comply with the requirement of localization tasks.
 
 <center>
-<img src="pics/intro.pdf" width="80%" />
+<img src="pics/intro.png" width="80%" />
 </center>
 
 Our BagCAMs focuses on deriving a set of regional localizers from this well-trained classifier. Those regional localizers can discern object-related factors with respect to each spatial position, acting as the base learners of the ensemble learning. With those regional localizers, the final localization results can be obtained by integrating their effect.
 
 <center>
-<img src="pics/structure.pdf" width="80%" />
+<img src="pics/structure.png" width="80%" />
 </center>
 
 
