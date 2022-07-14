@@ -1,11 +1,11 @@
 # BagCAMs
 
 ## Overview
-Official implementation of the paper  ``[Bagging Regional Classification Activation Maps for Weakly Supervised Object Localization][paper_url]" (ECCV'22) 
+Official implementation of ``[Bagging Regional Classification Activation Maps for Weakly Supervised Object Localization][paper_url]" (ECCV'22) 
 
-## Bridge the Gap between image-level classifier and pixel-level localizer
+## Gap between image-level classifier and pixel-level localizer
 
-The WSOL aims at training a feature extractor and a classifier based on the CE between image-level features and image-level annotation. This classifier is then directly used as the localizer onto pixel-level features in the test time to generate pixel-level classification results, i.e., the localization map. 
+WSOL aims at training a feature extractor and a classifier based on the CE between image-level features and image-level annotation. This classifier is then directly used as the localizer onto pixel-level features in the test time to generate pixel-level classification results, i.e., the localization map. 
 
 However, the object localizer focuses on discerning the class of all regional positions based on the pixel-level features, where discriminative factors may not be well-aggregated, i.e., insufficient to activate the globally-learned classifier.
 
