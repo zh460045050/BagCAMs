@@ -21,6 +21,12 @@ Our BagCAMs focuses on deriving a set of regional localizers from this well-trai
 <img src="pics/structure.png" width="80%" />
 </center>
 
+Due to better uitlize multiple regional localizer, our BagCAMs can perform better than existing CAM-based method, especially for the intermediate that has higher spatial resolution. 
+
+<center>
+<img src="pics/result.png" width="80%" />
+</center>
+
 
 ## Getting Start
 
