@@ -1,7 +1,7 @@
 # BagCAMs
 
 ## Overview
-Official implementation of the paper ``Bagging Regional Classification Activation Maps for Weakly Supervised Object Localization" (ECCV'22) 
+Official implementation of the paper ``[Bagging Regional Classification Activation Maps for Weakly Supervised Object Localization][paper_url]" (ECCV'22) 
 
 ## Gap between image-level classifier and pixel-level localizer
 
@@ -108,7 +108,7 @@ This code and our experiments are conducted based on the release code of [gradca
 [dawsol_url]: https://github.com/zh460045050/DA-WSOL_CVPR2022
 
 
-[paper_url]: https://arxiv.org/abs/2203.01714
+[paper_url]: https://arxiv.org/pdf/2207.07818.pdf
 [checkpoint_url]: https://drive.google.com/drive/folders/1NLrTq8kllz46ESfBSWJFZ638PKPDXLQ1?usp=sharing
 [meta_url]: https://drive.google.com/drive/folders/1xQAjoLyD96vRd6OSF72TAGDdGOLVJ0yE?usp=sharing
 [cub_image_url]: https://drive.google.com/file/d/1U6cwKHS65wayT9FFvoLIA8cn1k0Ot2M1/view?usp=drive_open
