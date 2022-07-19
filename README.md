@@ -93,7 +93,7 @@ Note that ``--post_methods" should be set as ``CAM" for efficiency in the traini
 @article\{BagCAMs,</br>
   title=\{Bagging Regional Classification Activation Maps for Weakly Supervised Object Localization\},</br>
   author=\{Zhu, Lei and Chen, Qian and Jin, Lujia and You, Yunfei and Lu, Yanye\},</br>
-  journal=\{arXiv preprint arXiv:2203.01714\},</br>
+  journal=\{arXiv preprint arXiv:2207.07818\},</br>
   year=\{2022\}</br>
 \}
 
